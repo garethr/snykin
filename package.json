@@ -4,7 +4,9 @@
   "description": "A tiny vulnerable Express application",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "test": "jest",
+    "pretty": "prettier --write *.js"
   },
   "author": "Gareth Rushgrove <gareth@morethanseven.net>",
   "license": "Apache-2.0",
@@ -13,6 +15,14 @@
     "subtext": "^6.0.12"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "prettier": "1.19.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }

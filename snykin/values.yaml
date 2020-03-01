@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: garethr/snykin
+  repository: quay.io/garethr/snykin
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []

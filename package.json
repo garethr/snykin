@@ -4,12 +4,15 @@
   "description": "A tiny vulnerable Express application",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "Gareth Rushgrove <gareth@morethanseven.net>",
   "license": "Apache-2.0",
   "dependencies": {
     "express": "^4.17.1",
     "subtext": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
